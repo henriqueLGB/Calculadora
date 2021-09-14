@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Calculadora</title>
+
+		<!-- BOOTSTRAP 4 -->
+		<link rel="stylesheet" href="assets/bootstrap4/css/bootstrap.min.css">
+    <script src="assets/bootstrap4/js/bootstrap.min.js"></script>
+
+    <!-- CSS E JAVASCRIPT-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/calculadora.js"></script>
+	</head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <br />
+
+          <div class="calculadora">
+            <input type="text" id="display" class="form-control resultado" placeholder="0" disabled="disabled" />
+            
+            <div class="row">
+              <button type="button" onclick="apagar()" class="btn btn-dark btn-lg clear font-weight-light">C</button>
+              <button type="button" onclick="adicionarSimbolo('divisao')" class="btn btn-dark btn-lg font-weight-light">/</button>
+              <button type="button" onclick="adicionarSimbolo('multiplicar')" class="btn btn-dark btn-lg font-weight-light">*</button>
+            </div>
+
+            <div class="row">
+              <button type="button" onclick="adicionaNumero(7)" class="btn btn-dark btn-lg font-weight-light">7</button>
+              <button type="button" onclick="adicionaNumero(8)" class="btn btn-dark btn-lg font-weight-light">8</button>
+              <button type="button" onclick="adicionaNumero(9)" class="btn btn-dark btn-lg font-weight-light">9</button>
+              <button type="button" onclick="adicionarSimbolo('subtrair')" class="btn btn-dark btn-lg font-weight-light">-</button>
+            </div>
+            
+            <div class="row">
+              <button type="button" onclick="adicionaNumero(4)" class="btn btn-dark btn-lg font-weight-light">4</button>
+              <button type="button" onclick="adicionaNumero(5)" class="btn btn-dark btn-lg font-weight-light">5</button>
+              <button type="button" onclick="adicionaNumero(6)" class="btn btn-dark btn-lg font-weight-light">6</button>
+              <button type="button" onclick="adicionarSimbolo('somar')" class="btn btn-dark btn-lg font-weight-light">+</button>
+            </div>
+
+            <div class="row">
+              <button type="button" onclick="adicionaNumero(1)" class="btn btn-dark btn-lg font-weight-light">1</button>
+              <button type="button" onclick="adicionaNumero(2)" class="btn btn-dark btn-lg font-weight-light">2</button>
+              <button type="button" onclick="adicionaNumero(3)" class="btn btn-dark btn-lg font-weight-light">3</button>
+              <button type="button" onclick="resultado()" class="btn btn-dark btn-lg enter">=</button>
+            </div>
+
+            <div class="row" style="margin-top: -60px">
+              <button type="button" onclick="adicionaNumero(0)"class="btn btn-dark zero btn-lg font-weight-light">0</button>
+              <button type="button" onclick="adicionarSimbolo('ponto')" class="btn btn-dark btn-lg font-weight-light">.</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>    
+  </body>
+</html>
